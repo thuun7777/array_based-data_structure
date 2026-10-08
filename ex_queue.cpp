@@ -38,7 +38,7 @@ bool qEmpty(Queue& q){
 int qLength(Queue& q){
     return (q.qback - q.qfront);
 }
-//if enter the queue succeed -> 1, if not -> 0
+//if enter the queue successfully -> 1, if not -> 0
 bool enQueueu(Queue& q, customer newData){
     if (qLength(q)==capa){
         cout<<"Queue data fetch failed. Queue is full!\n";
@@ -54,7 +54,7 @@ bool enQueueu(Queue& q, customer newData){
     q.qback++;
     return 1;
 }
-//if pop front ele succeed -> 1, if not -> 0
+//if pop front ele successfully -> 1, if not -> 0
 bool deQueue(Queue& q){
     if (qEmpty(q)){
         cout<<"Queue has already been empty!\n";
